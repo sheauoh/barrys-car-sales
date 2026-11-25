@@ -70,3 +70,7 @@ footer {
     margin: auto;
     font-size: 12px;
 }
+
+nav a[aria-current="page"] {
+    font-weight: bold;
+}
