@@ -1,7 +1,7 @@
-var link = document.getElementById("suv-enquiry");
+var params = new URLSearchParams(window.location.search);
+var chosenCar = params.get("car");
+var carSelect = document.getElementById("car");
 
-if (link) {
-    link.onclick = function() {
-        window.location.href = "enquiry.html";
-    };
+if (chosenCar && carSelect) {
+    carSelect.value = chosenCar;
 }
