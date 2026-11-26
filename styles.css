@@ -24,7 +24,8 @@ nav a {
 }
 
 main {
-    width: 900px;
+    max-width: 900px;
+    box-sizing: border-box;
     margin: 20px auto;
     padding: 20px;
     background: white;
@@ -32,6 +33,8 @@ main {
 
 img {
     width: 300px;
+    max-width: 100%;
+    height: auto;
 }
 
 table {
@@ -51,7 +54,9 @@ label {
 input,
 select,
 textarea {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
     margin-bottom: 10px;
 }
 
@@ -66,7 +71,8 @@ button {
 }
 
 footer {
-    width: 900px;
+    max-width: 900px;
+    box-sizing: border-box;
     margin: auto;
     font-size: 12px;
 }
