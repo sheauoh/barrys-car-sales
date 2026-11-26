@@ -25,13 +25,13 @@
 <main>
     <h2>Vehicle enquiry</h2>
     <p>Complete the form below and a member of our team will contact you.</p>
-    <p>Fields marked in red are important.</p>
+    <p>Fields marked with an asterisk (*) are required.</p>
 
     <div id="confirmation" role="status"></div>
 
     <form action="#" method="post">
         <div>
-            <label for="car">Vehicle</label>
+            <label for="car">Vehicle *</label>
             <select id="car" name="car" required>
             <option value="">Choose a vehicle</option>
             <option value="hatchback">2019 Hatch 1.0</option>
@@ -42,12 +42,12 @@
         </div>
 
         <div>
-            <label for="name">Full name</label>
+            <label for="name">Full name *</label>
             <input type="text" id="name" name="name" placeholder="e.g. Dave Smith" required>
         </div>
 
         <div>
-            <label for="email">Email address</label>
+            <label for="email">Email address *</label>
             <input type="email" id="email" name="email" required>
         </div>
 
@@ -58,7 +58,7 @@
 
         <div>
             <label for="message">Your message</label>
-            <textarea id="message" name="message">Tell us what you would like to know...</textarea>
+            <textarea id="message" name="message" placeholder="Tell us what you would like to know..."></textarea>
         </div>
 
         <div>
@@ -73,7 +73,7 @@
             <input type="radio" id="contact-phone" name="contact" value="phone">
             <label for="contact-phone">Phone</label>
         </fieldset>
-
+        <p> Unless you checked the box above, your details are only used to help with your enquiry! </p>
         <button type="submit">SUBMIT</button>
     </form>
 
